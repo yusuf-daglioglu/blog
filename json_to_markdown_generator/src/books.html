@@ -1,0 +1,43 @@
+# 📚 Books
+
+List of books I read.
+
+- The first part of this page contains technical books (about computer enginnering)
+
+- and the second part contains the non-technical books.
+
+![books](./books_2.jpg)
+
+{{#bookList}}
+
+!!! success "{{name}}"
+
+    Authors: {{authorList}}
+
+    {{#aboutAuthorListExist}}
+    About the author:<br>
+    {{/aboutAuthorListExist}}
+
+    {{#aboutAuthorList}}
+    - {{.}}<br>
+    {{/aboutAuthorList}}
+
+    Access the book: <a target='_blank' rel='noopener noreferrer' href='{{url}}'>{{url}}</a>
+
+{{#comments}}
+
+!!! note "My comments for the book"
+
+    {{comments}}
+{{/comments}}
+
+    {{#linkList}}
+    - <a target='_blank' rel='noopener noreferrer' href='{{.}}'>{{.}}</a>
+
+    {{/linkList}}
+
+<br><br>
+
+{{/bookList}}
+
+![books](./books_1.jpg)
