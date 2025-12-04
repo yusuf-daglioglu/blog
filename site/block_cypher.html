@@ -1,0 +1,1119 @@
+
+<!doctype html>
+<html lang="tr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="yalnizlik_paylasilmaz.html">
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>💻IT • Block şifreleme [Turkish] - Personal Blog • Yusuf Daglioglu</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <meta name="robots" content="noindex, nofollow, nosnippet, noimageindex" />
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#block-cipher" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Personal Blog • Yusuf Daglioglu" class="md-header__button md-logo" aria-label="Personal Blog • Yusuf Daglioglu" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Personal Blog • Yusuf Daglioglu
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              💻IT • Block şifreleme [Turkish]
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Personal Blog • Yusuf Daglioglu" class="md-nav__button md-logo" aria-label="Personal Blog • Yusuf Daglioglu" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Personal Blog • Yusuf Daglioglu
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about_me.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    👤 About me & message me
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="books.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📚 Books
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="art_online_news.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨Art • Kültür&Sanat fuarları ve haberleri [Turkish]
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="university_autonomy.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🏛️ Aυτονομία Πανεπιστημίων [Greek]
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="art_movements.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨Art • Sanat akımları [Turkish]
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="amateur_communities.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨Art • Amateur Communities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="immutable_distro.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    💻IT • Immutable Distro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="expressionism_artworks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨Art • Expressionism Artworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="notable_live_performance_and_covers.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨Art • Notable live and covers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="short_movies_and_my_imdb.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨Art • Short movies and my IMDB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="what_time_is_it.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ⏰ Saat kaç? [Turkish]
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="do_not_go_gentle.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨Art • Do not go gentle into that goodnight
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rolling_releases.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    💻IT • Rolling Releases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dillerin_ilginc_yapilari.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🗣️ Dillerin ilginç yapıları [Turkish]
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hsts.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    💻IT • HTTP Strict Transport Security [Turkish]
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="yazilim_lisanslari.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    💻IT • Yazılım Lisansları [Turkish]
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="yalnizlik_paylasilmaz.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨Art • Yalnızlık Paylaşılmaz [Turkish]
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    💻IT • Block şifreleme [Turkish]
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="block_cypher.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    💻IT • Block şifreleme [Turkish]
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stream-cipher" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Stream cipher
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blok-sifreleme-or-block-cipher" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Blok Şifreleme (or Block Cipher)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔒 Blok Şifreleme (or Block Cipher)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elektronik-kod-defteri-or-electronic-codebook-or-ecb" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Elektronik kod defteri (or Electronic Codebook or ECB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sifre-blok-zincirlemesi-or-cipher-block-chaining-or-cbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Şifre Blok Zincirlemesi (or Cipher Block Chaining or CBC)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaylml-sifre-blok-zincirlemesi-or-propagating-cipher-block-chaining-or-pcbc-or-plaintext-cipher-block-chaining" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Yayılımlı Şifre Blok Zincirlemesi (or Propagating Cipher Block Chaining or PCBC or plaintext cipher-block chaining)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sifre-geri-beslemeli-or-cipher-feedback-or-cfb" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Şifre Geri Beslemeli (or Cipher FeedBack or CFB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ckt-geri-beslemeli-or-output-feedback-or-ofb" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Çıktı Geri Beslemeli (or Output FeedBack or OFB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sayc-modunda-sifreleme-or-counter-mode-encryption-or-ctr" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Sayıcı Modunda Şifreleme (or Counter Mode Encryption or CTR)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java-cipher" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Java Cipher
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ilklendirme-vektoru-or-starting-variable-or-sv-or-initialization-vector-or-iv-or-iv-or-ilklendirme-degiskeni-or-baslangc-vektoru-or-bv" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 ilklendirme vektörü (or starting variable or SV or Initialization Vector or IV or İV or ilklendirme değişkeni or başlangıç vektörü or BV)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diger-makaleler" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Diğer makaleler
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stream-cipher" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Stream cipher
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blok-sifreleme-or-block-cipher" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Blok Şifreleme (or Block Cipher)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔒 Blok Şifreleme (or Block Cipher)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elektronik-kod-defteri-or-electronic-codebook-or-ecb" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Elektronik kod defteri (or Electronic Codebook or ECB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sifre-blok-zincirlemesi-or-cipher-block-chaining-or-cbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Şifre Blok Zincirlemesi (or Cipher Block Chaining or CBC)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaylml-sifre-blok-zincirlemesi-or-propagating-cipher-block-chaining-or-pcbc-or-plaintext-cipher-block-chaining" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Yayılımlı Şifre Blok Zincirlemesi (or Propagating Cipher Block Chaining or PCBC or plaintext cipher-block chaining)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sifre-geri-beslemeli-or-cipher-feedback-or-cfb" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Şifre Geri Beslemeli (or Cipher FeedBack or CFB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ckt-geri-beslemeli-or-output-feedback-or-ofb" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Çıktı Geri Beslemeli (or Output FeedBack or OFB)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sayc-modunda-sifreleme-or-counter-mode-encryption-or-ctr" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Sayıcı Modunda Şifreleme (or Counter Mode Encryption or CTR)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java-cipher" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Java Cipher
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ilklendirme-vektoru-or-starting-variable-or-sv-or-initialization-vector-or-iv-or-iv-or-ilklendirme-degiskeni-or-baslangc-vektoru-or-bv" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 ilklendirme vektörü (or starting variable or SV or Initialization Vector or IV or İV or ilklendirme değişkeni or başlangıç vektörü or BV)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diger-makaleler" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Diğer makaleler
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="block-cipher">Block Cipher</h1>
+<p>📎 digital-security 📎 cryptography</p>
+<h2 id="stream-cipher">🔒 Stream cipher</h2>
+<p><code>Block şifreleme</code>deki gibi blok blok değilde, <code>stream</code>'den gelen her bilgiyi direk şifreleyen algoritmalara denir. <code>Stream cipher</code>'da genelde, en ufak birim <code>bit</code> veya <code>byte</code> olarak baz alınır. <code>Stream cyper</code>, <code>block şifreleme</code>ye alternatiftir. <code>Block şifreleme</code>de en ufak birim block'tur.</p>
+<h2 id="blok-sifreleme-or-block-cipher">🔒 Blok Şifreleme (or Block Cipher)</h2>
+<p><code>Blok şifreleme</code> kullanan algoritmalarda, şifrelenecek tüm mesaj <code>block size</code> kadar bölünür. Her bölünen parça ayrı ayrı şifrelenerek, şifrelenmiş halleri birleştirilir.</p>
+<p><code>Block şifreleme</code>de, <code>block size</code> ne kadar büyükse, şifrelemede o kadar güvenlik sağlanmış olur. Zira, blok uzunluğu büyükse, her bloğu ayrı ayrı tahminleme ile inceleyen hacker'a daha uzun bir çıktı kümesi vermiş oluruz.</p>
+<p><code>Block size</code> ile, şifrelemede kullanılacak anahtarın boyutunun bir ilişkisi olmak zorunda değildir (kişisel olarak ilişki olduğunu belirten bir kaynak okumadım).</p>
+<p><code>Blok şifreleme</code> kullanan birçok algoritma vardır. Fakat her <code>blok şifreleme</code>nin de birçok türevi/uzantısı vardır. Bunlar "<strong>çalışma kipi (or mode of operation)</strong>" olarak ta adlandırılırlar. örnek çalışma kipleri:</p>
+<ul>
+<li>
+<h3 id="elektronik-kod-defteri-or-electronic-codebook-or-ecb">🔒 Elektronik kod defteri (or Electronic Codebook or ECB)</h3>
+</li>
+</ul>
+<p><code>Blok şifreleme</code>nin en basitidir. Her blok bağımsızca şifrelenir ve sonrada yan yana dizilerek birleştirilir.</p>
+<ul>
+<li>
+<h3 id="sifre-blok-zincirlemesi-or-cipher-block-chaining-or-cbc">🔒 Şifre Blok Zincirlemesi (or Cipher Block Chaining or CBC)</h3>
+</li>
+</ul>
+<p>her blok bağımsız şifrelenir. fakat her blok şifrelenmeden önce, bir önceki blokun şifrelenmiş halini ile <code>XOR</code>'lanır (ve daha sonra şifrelenir).</p>
+<p>İlk bloğun öncesinde hiçbir blok olmadığı için, ilk blok manuel olarak verilecek <code>Initialization Vector</code> ile işleme tabi tutulur.</p>
+<p><code>CBC</code> mode'unun dezavantajları (Aşağıdaki cümlelerin tersi, <code>ECB</code>'nin avantajlarıdır):</p>
+<ul>
+<li>
+<p><code>CPU</code> her bloğu paralel şekilde şifreleme yapamaz. yani; şifrelerken yavaştır.</p>
+<p>Not: Hem <code>CBC</code> hem de <code>ECB</code>, decrypt işlemini her bloğu paralel şekilde işleterek yapabilir.</p>
+</li>
+<li>
+<p>şifrelenmiş mesajda herhangi bir bloğu kaybedersek, mesajın kaybolan kısmından sonrasını açamayız.</p>
+</li>
+</ul>
+<p><code>CBC</code> mode'unun avantajları (Aşağıdaki cümlelerin tersi, <code>ECB</code>'nin dezavantajlarıdır):</p>
+<ul>
+<li>
+<p>Herhangi bir blok, farklı bir bloktaki ile aynı açık metni şifreliyor olsun (böyle denk gelmiş olsun). Buna rağmen farklı şifrelenmiş çıktı verecektir. Çünkü her block bir önceki blok ile de matematiksel işleme tabi tutulduğu için aynı çıktıyı vermez.</p>
+</li>
+<li>
+<h3 id="yaylml-sifre-blok-zincirlemesi-or-propagating-cipher-block-chaining-or-pcbc-or-plaintext-cipher-block-chaining">🔒 Yayılımlı Şifre Blok Zincirlemesi (or Propagating Cipher Block Chaining or PCBC or plaintext cipher-block chaining)</h3>
+</li>
+</ul>
+<p><code>CBC</code> ile aynı mantıktadır. <code>CBC</code>; sadece bir önceki bloğun şifreli halini kullanırken, <code>PCBC</code> buna ek olarak; bir önceki bloğun açık halinden (şifrelenmemiş halinden) de yararlanır.</p>
+<ul>
+<li>
+<h3 id="sifre-geri-beslemeli-or-cipher-feedback-or-cfb">🔒 Şifre Geri Beslemeli (or Cipher FeedBack or CFB)</h3>
+</li>
+<li>
+<h3 id="ckt-geri-beslemeli-or-output-feedback-or-ofb">🔒 Çıktı Geri Beslemeli (or Output FeedBack or OFB)</h3>
+</li>
+<li>
+<h3 id="sayc-modunda-sifreleme-or-counter-mode-encryption-or-ctr">🔒 Sayıcı Modunda Şifreleme (or Counter Mode Encryption or CTR)</h3>
+</li>
+</ul>
+<p>Bazı kaynaklarda sadece <code>CTR mode</code>un kısaltması olduğundan "<strong>CM</strong>" olarak da kullanılmaktadır. Bazı kaynaklarda ise; "<strong>integer counter mode (or ICM) and segmented integer counter (or SIC)</strong>" olarak kullanılır.</p>
+<h2 id="java-cipher">🔒 Java Cipher</h2>
+<p>"<code>algorithm/mode/padding</code>" formatında "<code>transformation</code>" adı verilen string'i alır.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Cipher</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">javax</span><span class="p">.</span><span class="na">crypto</span><span class="p">.</span><span class="na">Cipher</span><span class="p">.</span><span class="na">getInstance</span><span class="p">(</span><span class="s">&quot;AES/CBC/PKCS5Padding&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>Eğer getInstance'a sadece "AES" verilirse, bu durumda provider'ın sunduğu default değerler kullanılır.</p>
+<h2 id="ilklendirme-vektoru-or-starting-variable-or-sv-or-initialization-vector-or-iv-or-iv-or-ilklendirme-degiskeni-or-baslangc-vektoru-or-bv">🔒 ilklendirme vektörü (or starting variable or SV or Initialization Vector or IV or İV or ilklendirme değişkeni or başlangıç vektörü or BV)</h2>
+<p><code>IV</code>, <code>salt</code> ile karıştırılmamalıdır. Farklı şeylerdir fakat aynı konsepte hizmet ederler.</p>
+<p><code>Salt</code>'ta da olduğu gibi her şifrelemede farklı kullanılmalıdır ve data açılmak istendiği zaman kullanmak üzere DB'de saklanmalıdır. <code>Salt</code> standart algoritmaların dökümantasyonunda belirtilen bir terim değil iken, <code>IV</code> direk algoritmanın kendisinde olan bir terimdir.</p>
+<p><code>IV</code> yerine key kullanılamaz mıydı? Eğer key, <code>IV</code> yerine kullanılırsa, o zaman aynı <code>plain-text</code>'ler aynı şifrelenmiş bilgiyi üretir. Bu da güvenlik açığı meydana getirebilir.</p>
+<p>Eğer şifreleme işleminde <code>IV</code> kullanılmazsa, <code>CBC</code> tabanlı algoritmalarının yapısı gereği, aynı veri şifrelendiğinde, şifrelenmiş verinin sadece ilk bloğu, aynı çıktıyı verir. kaynak: <a href="https://richardwarrender.com/2016/04/encrypt-data-using-aes-and-256-bit-keys/">https://richardwarrender.com/2016/04/encrypt-data-using-aes-and-256-bit-keys/</a> <code>IV – the bit twister</code> başlığı.</p>
+<p>örnek:</p>
+<p><code>openssl</code> komutu ile bir mesajı şifreleyelim:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>openssl<span class="w"> </span>enc<span class="w"> </span>-aes128<span class="w"> </span>-k<span class="w"> </span><span class="s2">&quot;secretpassword&quot;</span><span class="w"> </span>-a<span class="w"> </span>-p<span class="w"> </span>-nosalt<span class="w"> </span>-iv<span class="w"> </span><span class="m">00</span>
+<span class="nv">key</span><span class="o">=</span><span class="s2">&quot;2034F6E32958647FDFF75D265B455EBF&quot;</span>
+Hello<span class="w"> </span>Mr<span class="w"> </span>Warrender,<span class="w"> </span>I<span class="w"> </span>have<span class="w"> </span>some<span class="w"> </span>terrible<span class="w"> </span>news
+
+VVklkPrL5fczxmu4vZ93BnfBBpU8BWK1IQhHF6JRKSNZJ7PvpcaE8K/Mkbx1xgHa
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>enc<span class="w"> </span>-aes128<span class="w"> </span>-k<span class="w"> </span><span class="s2">&quot;secretpassword&quot;</span><span class="w"> </span>-a<span class="w"> </span>-p<span class="w"> </span>-nosalt<span class="w"> </span>-iv<span class="w"> </span><span class="m">00</span>
+<span class="nv">key</span><span class="o">=</span><span class="s2">&quot;2034F6E32958647FDFF75D265B455EBF&quot;</span>
+Hello<span class="w"> </span>Mr<span class="w"> </span>Warrender,<span class="w"> </span>This<span class="w"> </span>is<span class="w"> </span>good<span class="w"> </span>news
+
+VVklkPrL5fczxmu4vZ93BkAsVA64MLd5uah+zTVzr0XlOONVgDEd7ZunyIIzhpAo
+</code></pre></div>
+<p>Farklı bir <code>IV</code> kullanırsam, ilk bloğu farklı bir çıktı alırım:</p>
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>enc<span class="w"> </span>-aes256<span class="w"> </span>-k<span class="w"> </span><span class="s2">&quot;secretpassword&quot;</span><span class="w"> </span>-a<span class="w"> </span>-p<span class="w"> </span>-nosalt
+<span class="nv">key</span><span class="o">=</span><span class="s2">&quot;2034F6E32958647FDFF75D265B455EBF40C80E6D597092B3A802B3E5863F878C&quot;</span>
+<span class="nv">iv</span><span class="w"> </span><span class="o">=</span>AD0ACC568C88C116D57B273D98FB92C0
+Hello<span class="w"> </span>Mr<span class="w"> </span>Warrender,<span class="w"> </span>This<span class="w"> </span>is<span class="w"> </span>good<span class="w"> </span>news
+
+<span class="m">9</span>/0FGE21YYBl8NvlCp1Ft8j1V7BiIpCIlNa/zbYwL5LWyemd/7QEu0tkVz9/f0JG
+</code></pre></div>
+<p><code>CBC</code> tabanlı algoritmalarının yapısı gereği hacker'ın elinde <code>IV</code> yok ise, key ile sadece ilk bloğu (mesajın ilk kısmını) açamaz. Diğer blokların hepsini açabilir. kaynak: <a href="https://richardwarrender.com/2016/04/encrypt-data-using-aes-and-256-bit-keys/">https://richardwarrender.com/2016/04/encrypt-data-using-aes-and-256-bit-keys/</a> <code>Wait... The IV is not a key!</code> başlığı.</p>
+<p>Yukarıdaki cümleyi şöyle örneklendirerek anlatalım:</p>
+<p>Şifrelerken her bloğu sırası ile şifreliyoruz:</p>
+<div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">fullPlainText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">plainText1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">plainText2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">plainText3</span><span class="p">;</span>
+
+<span class="c1">// Phase 1. We are creating the first block of encrypted text in this phase.</span>
+<span class="n">encryptedText1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">encryptFunction</span><span class="p">(</span><span class="w"> </span><span class="n">xorFunction</span><span class="p">(</span><span class="w"> </span><span class="n">plainText1</span><span class="p">,</span><span class="w"> </span><span class="n">IV</span><span class="p">),</span><span class="w"> </span><span class="n">KEY</span><span class="p">);</span>
+
+<span class="c1">// Phase 2:</span>
+<span class="n">encryptedText2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">encryptFunction</span><span class="p">(</span><span class="w"> </span><span class="n">xorFunction</span><span class="p">(</span><span class="w"> </span><span class="n">plainText2</span><span class="p">,</span><span class="w"> </span><span class="n">encryptedText1</span><span class="p">),</span><span class="w"> </span><span class="n">KEY</span><span class="p">);</span>
+
+<span class="c1">// Phase 3:</span>
+<span class="n">encryptedText3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">encryptFunction</span><span class="p">(</span><span class="w"> </span><span class="n">xorFunction</span><span class="p">(</span><span class="w"> </span><span class="n">plainText3</span><span class="p">,</span><span class="w"> </span><span class="n">encryptedText2</span><span class="p">),</span><span class="w"> </span><span class="n">KEY</span><span class="p">);</span>
+
+<span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">encryptedText1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">encryptedText2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">encryptedText3</span><span class="p">;</span>
+</code></pre></div>
+<p>Şimdi ise şifrelenmiş veriyi, "KEY" kullanarak decrypt edelim:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Aşağıdaki blokların açılması işlemleri paralel yapılabilir.</span>
+<span class="c1">// Sırası ile olmak zorunda değil. Fakat şifrelerken sırası ile yapılmak zorunda.</span>
+
+<span class="c1">// Burası okunmadan önce XOR işleminin kurallarına bakılması gerekiyor şart (Başka dökümanda bu konu anlatıldı).</span>
+
+<span class="n">tempData3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">decryptFunction</span><span class="p">(</span><span class="n">cipherText3</span><span class="p">,</span><span class="w"> </span><span class="n">KEY</span><span class="p">);</span>
+<span class="n">plainText3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xorFunction</span><span class="p">(</span><span class="n">tempData3</span><span class="p">,</span><span class="w"> </span><span class="n">cipherText2</span><span class="p">);</span>
+
+<span class="n">tempData2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">decryptFunction</span><span class="p">(</span><span class="n">cipherText2</span><span class="p">,</span><span class="w"> </span><span class="n">KEY</span><span class="p">);</span>
+<span class="n">plainText2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xorFunction</span><span class="p">(</span><span class="n">tempData2</span><span class="p">,</span><span class="w"> </span><span class="n">cipherText1</span><span class="p">);</span>
+
+<span class="n">tempData1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">decryptFunction</span><span class="p">(</span><span class="n">cipherText1</span><span class="p">,</span><span class="w"> </span><span class="n">KEY</span><span class="p">);</span>
+<span class="n">plainText1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xorFunction</span><span class="p">(</span><span class="n">tempData1</span><span class="p">,</span><span class="w"> </span><span class="n">IV</span><span class="p">);</span><span class="w"> </span><span class="c1">// In this line we need IV. Only &quot;key&quot; is not enough for this block.</span>
+</code></pre></div>
+<h2 id="diger-makaleler">🔒 Diğer makaleler</h2>
+<p>Yazılım güvenliği ile ilgili diğer yazılarıma buradan ulaşabilirsiniz:</p>
+<ul>
+<li>
+<p><a href="https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security.md">https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security.md</a></p>
+</li>
+<li>
+<p><a href="https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_certificate.md">https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_certificate.md</a></p>
+</li>
+<li>
+<p><a href="https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_cryptography.md">https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_cryptography.md</a></p>
+</li>
+<li>
+<p><a href="https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_jwt.md">https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_jwt.md</a></p>
+</li>
+<li>
+<p><a href="https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_keycloak.md">https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_keycloak.md</a></p>
+</li>
+<li>
+<p><a href="https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_oauth.md">https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_oauth.md</a></p>
+</li>
+<li>
+<p><a href="https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_random_numbers.md">https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_random_numbers.md</a></p>
+</li>
+<li>
+<p><a href="https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_uuid.md">https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/security_uuid.md</a></p>
+</li>
+<li>
+<p><a href="https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/java_spring_security.md">https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/java_spring_security.md</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["search.highlight"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
