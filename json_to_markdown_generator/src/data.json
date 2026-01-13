@@ -1,0 +1,689 @@
+{
+    "bookList": [
+        {
+            "name": "Enterprise Integration Patterns",
+            "authorList": "Gregor Hohpe, Bobby Woolf",
+
+            "comments": "My personal notes from this book and other sources: (see title from below URL: 'Enterprise Integration Patterns')",
+            "linkList": [
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/pattern_enterprise_integration.md",
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/pattern.md#-enterprise-application-integration--eai-vs-enterprise-integration-patterns--eip"
+            ]
+        },
+        {
+            "name": "Domain-Driven Design",
+            "authorList": "Eric Evans",
+
+            "comments": "If you move from monolithic to microservice planet, you should read this book before decompose your monolithic application. My personal notes from this book and other sources:",
+            "linkList": [
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/pattern_ddd.md"
+            ]
+        },
+        {
+            "name": "Domain-Driven Design Reference",
+            "authorList": "Eric Evans",
+
+            "comments": "This is the summary of the old book. I highly recommend the old one."
+        },
+        {
+            "name": "Eclipse ile Java",
+            "authorList": "Esma Meral, Naci Dai",
+
+            "comments": "Read it if you want to learn basic Java."
+        },
+        {
+            "name": "Building Microservices",
+            "authorList": "Sam Newman",
+
+            "comments": "It explains how should be managed security, monitoring, testing, database (in different titles) in a microservice environment. <br><br> My personal notes from this book and other sources (see title from below URL: 'Architectural patterns')",
+            "linkList": [
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/pattern.md#architectural-patterns"
+            ]
+        },
+        {
+            "name": "Database Fundamentals",
+            "authorList": "Neeraj Sharma, Liviu Perniu, Raul F. Chong, Abhishek Iyer, Chaitali Nandan, Adi-Cristina Mitea, Mallarswami Nonvinkere, Mirela Danubianu",
+
+            "comments": "It starts from very basic concepts and explain many many advanced topics"
+        },
+        {
+            "name": "Blockchain 101",
+            "authorList": "Ahmet Usta, Serkan Doğantekin",
+
+            "comments": "Blockchain teknik altyapı ve piyasadaki uygulama incelemeleri"
+        },
+        {
+            "name": "Blockchain For Dummies",
+            "authorList": "Manav Gupta",
+
+            "comments": "Blockchain ve hyperledger'dan bahsediliyor. özellikle Blockchain kullanım alanlarından bahsediliyor."
+        },
+        {
+            "name": "Clean code",
+            "authorList": "Robert Cecil Martin (Uncle Bob)",
+
+            "comments": "The book is for object-oriented. And the examples are gives via Java."
+        },
+        {
+            "name": "Data Structures and Algorithms",
+            "authorList": "Granville Barnett, Luca Del Tongo",
+
+            "comments": "examples with pseudo code for algorithms and operations on data structures (sort, reverse...) ..."
+        },
+        {
+            "name": "Data Structures Using C",
+            "authorList": "Reema Thareja",
+
+            "comments": "Example via C for basic operations for data-structures."
+        },
+        {
+            "name": "Design Patterns: Elements of Reusable Object-Oriented Software",
+            "authorList": "Erich Gamma, Richard Helm, Ralph Johnson ve John Vlissides. (In industry we call them GOF (Gang of Four))",
+
+            "comments": "This book is published in 1994. It explains:<br><br> - Structural patterns (adapter, bridge, composite, decorator, facade, proxy...) <br>- Creational patterns (abstract factory, builder, factory method, prototype, singleton...) <br>- Behavioral patterns (observer...) <br>- They have sample for every pattern with C++ and/or SmallTalk languages. <br><br> I partially read this book."
+        },
+        {
+            "name": "Fullstack React",
+            "authorList": "Anthony Accomazzo, Ari Lerner, Nate Murray, Clay Allsopp, David Guttman, Tyler McGinnis",
+
+            "comments": "It gives examples with code but the explanations are not  detailed"
+        },
+        {
+            "name": "Kripto-Para Bitcoin",
+            "authorList": "Abdurrahman ÇARKACIOĞLU",
+
+            "comments": "SERMAYE PİYASASI KURULU Araştırma Dairesi aracılığı ile bir araştırma raporu olarak geçmektedir. bitcoin'in teknik altyapısı ve felsefik açıdan incelemesi yapılmıştır."
+        },
+        {
+            "name": "NoSQL Distilled",
+            "authorList": "Martin Fowler",
+
+            "comments": "Key-Value, Column-family, document, graph databases.. My personal notes from this book and other sources:",
+            "linkList": [
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/db_cassandra.md"
+            ]
+        },
+        {
+            "name": "Patterns of Enterprise Application Architecture",
+            "authorList": "Martin Fowler",
+
+            "comments": "Enterprise backend uygulamalarının her katmanı, controller, veritabanı ilişkileri hakkında practice'ler içeriyor. her şeyi sebep sonuç ilişkisi ile anlatıyor. session tutulması ile ilgili kısımlar var. web için MVC anlatılıyor. Concurrency, ACID konuları işleniyor."
+        },
+        {
+            "name": "Pratik Spring Core",
+            "authorList": "Özcan Acar",
+
+            "comments": "Examples are with short source codes."
+        },
+        {
+            "name": "Pro Apache Tomcat 6",
+            "authorList": "Matthew Moodie, Kunal Mittal",
+
+            "comments": "One of the best resources to understand the fundamentals concepts of servlets and app servers. It includes all explanations with XML configuration examples."
+        },
+        {
+            "name": "Pro Spring 5",
+            "authorList": "Iuliana Cosmina, Rob Harrop, Chris Schaefer, Clarence Ho",
+
+            "comments": "It has source code examples. My personal notes from this book and other sources: (see 'java_spring' prefixed files from below URL)",
+            "linkList": [
+                "https://github.com/yusuf-daglioglu/tutorials/tree/master/tutorials"
+            ]
+        },
+        {
+            "name": "Software Architect's Handbook",
+            "authorList": "Joseph Ingeno",
+
+            "comments": "Too many different topics in one book. They should be read by all developers. Why is software architecture important?, waterfall, agile, DDD, KISS, SOLID design principles, Software architecture patterns, Message queues, publish-subscribe pattern, CQRS, SOA, Microservice, Serverless, DevOps, continuous integration, continuous delivery..."
+        },
+        {
+            "name": "Spring Framework Cookbook",
+            "authorList": "JCGs (Java Code Geeks)",
+            "comments": "It's a cookbook. You can find some simple examples. JCG is an independent community. the book has been written and edited by many people."
+        },
+        {
+            "name": "Spring in action",
+            "authorList": "Craig Walls",
+
+            "comments": "It includes many different topics about Spring with short examples. If you already developed many applications using Spring MVC, I don't think you must to read this book. My personal notes from this book and other sources: (see 'java_spring' prefixed files from below URL)",
+            "linkList": [
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials"
+            ]
+        },
+        {
+            "name": "Türkiyenin Kartlı Ödeme Sistemleri tarihi",
+            "authorList": "Akdoğan Özkan",
+
+            "comments": "Ağırlıklı olarak Türkiye'deki kartlı ödeme sistemlerinin gelişimi sıra ile anlatılmaktadır. Bolca fotoğraf içermektedir."
+        },
+        {
+            "name": "Ubuntu Linux Bible",
+            "authorList": "William von Hagen",
+
+            "comments": "ubuntu desktop ve sunucu kullanımı için gui uygulamalarından, sistem ayarlarına kadar açıklamalar var. ubuntu server üzerine mail sunucusu, DHCP sunucusu gibi anlatımlarda mevcut. My personal notes from this book and other sources ",
+            "linkList": [
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/unix_like.md",
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/unix_like_shell_syntax.md",
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/unix_like_commands.md"
+            ]
+        },
+        {
+            "name": "UNIX (herkes için)",
+            "authorList": "Dr. Yalçın ÖZKAN",
+
+            "comments": "Detaylı unix komutları ve shell. My personal notes from this book and other sources",
+            "linkList": [
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/unix_like.md",
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/unix_like_shell_syntax.md",
+                "https://github.com/yusuf-daglioglu/tutorials/blob/master/tutorials/unix_like_commands.md"
+            ]
+        },
+        {
+            "name": "vahşetin çağrısı (eng: The Call of the Wild)",
+            "authorList": "Jack London",
+            "aboutAuthorList": [
+                "life:1876 - 1916",
+                "orjinal adı: John Griffith Chaney",
+                "American novelist, short story writer, journalist, activist.",
+                "maddi durumlardan dolayı üniversite okuyamadı."
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "A Son Of The Sun",
+            "authorList": "Jack London"
+
+        },
+        {
+            "name": "şampiyon (eng: The Abysmal Brute)",
+            "authorList": "Jack London"
+
+        },
+        {
+            "name": "Adem'den önce (eng: Before Adam)",
+            "authorList": "Jack London"
+
+        },
+        {
+            "name": "beyaz diş (eng: White Fang)",
+            "authorList": "Jack London"
+
+        },
+        {
+            "name": "ateş yakmak (eng: To Build a Fire)",
+            "authorList": "Jack London"
+
+        },
+        {
+            "name": "bir kalem pirzola (eng: a piece of steak)",
+            "authorList": "Jack London"
+
+        },
+        {
+            "name": "Porportuk'un aklı (eng: The wit of Porportuk)",
+            "authorList": "Jack London",
+
+            "comments": "'LOST FACE' isimli İngilizce bir kitapta 7 adet bağımsız hikaye var. Bunlardan biri 'The wit of Porportuk'.<br> <br> kızılderili güzel bir kızın babasının borcunu ödemek için kendini satmasını anlatıyor. Porportuk kızı satın alan zengin adamın ismi."
+        },
+        {
+            "name": "sabırsız yürek (eng: Impatience Of The Heart)",
+            "authorList": "Stefan Zweig",
+            "aboutAuthorList": [
+                "life: life: 1881 - 1942",
+                "Avusturya-Macaristanlı",
+                "roman, oyun(tiyatro), gazeteciydi",
+                "Viyana Üniversitesi'nde felsefe okudu."
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "bilinmeyen bir kadının mektubu (eng: letter from unknown woman)",
+            "authorList": "Stefan Zweig"
+
+        },
+        {
+            "name": "santranç (eng: Chess Story)",
+            "authorList": "Stefan Zweig"
+
+        },
+        {
+            "name": "Yakıcı Sır (eng: Burning Secret)",
+            "authorList": "Stefan Zweig"
+
+        },
+        {
+            "name": "Clarissa",
+            "authorList": "Stefan Zweig"
+
+        },
+        {
+            "name": "cehennem (eng: inferno)",
+            "authorList": "Dan Brown",
+            "aboutAuthorList": [
+                "life: 1964 - present",
+                "Amerikalı yazar.",
+                "Başkanlık Ödülü'nü kazanmış bir matematik profesörü ile ilahiyat müzisyeni bir annenin oğlu."
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "dijital kale (eng: digital fortress)",
+            "authorList": "Dan Brown",
+
+            "comments": "It's good to know very simple terms about cryptography before read it."
+        },
+        {
+            "name": "Da Vinci Şifresi (eng: The Da Vinci Code)",
+            "authorList": "Dan Brown",
+
+            "comments": "'History is always written by the winners.' Dan Brawn"
+        },
+        {
+            "name": "Harry Potter ve Felsefe Taşı (eng: The Philosopher's Stone)",
+            "authorList": "J.K. Rowling",
+            "aboutAuthorList": [
+                "life:1965-present.",
+                "orjinal adı: Joanne Kathleen Jo Rowling.",
+                "İngiliz yazar.",
+                "Fransız Dili ve Edebiyatı okudu."
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "Harry Potter ve Sırlar Odası (eng: The Chamber of Secrets)",
+            "authorList": "J.K. Rowling"
+
+        },
+        {
+            "name": "Harry Potter ve Azkaban Tutsağı (eng: Prisoner of Azkaban)",
+            "authorList": "J.K. Rowling"
+
+        },
+        {
+            "name": "Harry Potter ve Ateş Kadehi (eng: The Goblet of Fire)",
+            "authorList": "J.K. Rowling"
+
+        },
+        {
+            "name": "Harry Potter ve Zümrüdüanka Yoldaşlığı (eng: Order of the Phoenix)",
+            "authorList": "J.K. Rowling"
+
+        },
+        {
+            "name": "Harry Potter ve Melez Prens (eng: The Half-Blood Prince)",
+            "authorList": "J.K. Rowling"
+
+        },
+        {
+            "name": "Kötü Yol",
+            "authorList": "Orhan Kemal",
+            "aboutAuthorList": [
+                "life:1914 (Adana, Osmanlı İmparatorluğu) - 1970 (Sofya, Bulgaristan).",
+                "orjinal adı: Mehmet Raşit Öğütçü.",
+                "Türk roman oyun(tiyatro) yazarı."
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "Evlerden Biri",
+            "authorList": "Orhan Kemal"
+
+        },
+        {
+            "name": "Bin Dokuz Yüz Seksen Dört (eng: Nineteen Eighty-Four)",
+            "authorList": "George Orwell",
+            "aboutAuthorList": [
+                "life:1903 - 1950.",
+                "orjinal adı: Eric Arthur Blair.",
+                "İngiliz romancı, gazeteci ve eleştirmen.",
+                "kısa bir süre polis olarak görev yaptı. orada gördüğü haksızlıklar onu sisteme karşı biri yapmıştır."
+            ],
+            "aboutAuthorListExist": true,
+
+            "comments": "redirects to www.reddit.com/r/privacy www.reddit.com/r/PrivacyGuides"
+        },
+        {
+            "name": "Hayvan Çiftliği (eng: Animal Farm)",
+            "authorList": "George Orwell"
+
+        },
+        {
+            "name": "The Big Four",
+            "authorList": "Agatha Christie",
+            "aboutAuthorList": [
+                "life: 1890 - 1976",
+                "İngiliz yazar, polisiye edebiyatın en önemli isimlerinden biri ve dedektif Hercule Poirot karakterinin yaratıcısı."
+            ],
+            "aboutAuthorListExist": true,
+
+            "comments": "Hercule Poirot karakteri bu kitapta da var."
+        },
+        {
+            "name": "And Then There Were None (Turkish: On Kişiydiler)",
+            "authorList": "Agatha Christie",
+            "aboutAuthorListExist": false,
+
+            "comments": "Kitabın farklı basımlarının isimleri: <br> - Ten Little Niggers (Turkish: On Küçük Zenci)<br> - Ten Little Indians (Turkish: On Küçük Kızılderili)."
+        },
+        {
+            "name": "The Mystery of the Blue Train",
+            "authorList": "Agatha Christie",
+            "aboutAuthorListExist": false,
+
+            "comments": "Hercule Poirot karakteri bu kitapta da var."
+        },
+        {
+            "name": "Hercule Poirot's Christmas (Turkish: Noel'de Cinayet)",
+            "authorList": "Agatha Christie",
+            "aboutAuthorListExist": false,
+
+            "comments": "Hercule Poirot karakteri bu kitapta da var. <br><br> Kitabın farklı baskılarının isimleri: <br> - 'Murder for Christmas', <br> - 'A Holiday for Murder'."
+        },
+        {
+            "name": "Elephants Can Remember",
+            "authorList": "Agatha Christie",
+            "aboutAuthorListExist": false,
+
+            "comments": "Hercule Poirot karakteri bu kitapta da var."
+        },
+        {
+            "name": "Three Blind Mice (Turkish: Fare Kapanı)",
+            "authorList": "Agatha Christie",
+            "aboutAuthorListExist": false
+
+        },
+        {
+            "name": "Ve perde İndi (Eng: Curtain)",
+            "authorList": "Agatha Christie",
+            "aboutAuthorListExist": false
+
+        },
+        {
+            "name": "Ölümün sesi",
+            "authorList": "Unknown",
+            "aboutAuthorListExist": false,
+
+            "comments": "Ufak bir köyde geçiyor konu. Köydeki herkesin açıklarını bulup, onlara mektup atıp şantaj yapan bir kadın öldürülüyor. Polis ve bir dedektif bu işi takip ediyor. Kadın herkesin açığını bulduğu için, köydeki birçok kişinin kadını sevmediği biliniyor. bu da polisin işini zorlaştırıyor.<br><br> Kitabın kapağında ve ilk sayfasında şunlar yazıyor:<br><br>AGATHA CHRISTIE - ÖLÜMÜN SESİ<br>Kitabın Orijinal Adı: Voice Of The Dead<br>Türkçe'si̇: Gönül Suveren<br><br>Fakat bu kitabın ingilizce'sini bulamadım. kitapta geçen kişilerin isimlerini internette arattığımda çıkmıyor. Bu kitap AGATHA CHRISTIE'e ait değil. İnternette bu kitap hakkında araştırdığımda, yayım kuruluşunun hata yaptığı ile ilgili yorumlar var."
+        },
+        {
+            "name": "beyaz zambaklar ülkesinde (eng: Finland, the country of white lilies)",
+            "authorList": "Grigory Petrov"
+
+        },
+        {
+            "name": "Dünya Tarihi (eng: A World History)",
+            "authorList": "William Hardy McNeill",
+            "aboutAuthorList": [
+                "life:1917-2016",
+                "Kanada kökenli Amerikalı tarihçi.",
+                "Tarih doktorası yapmış."
+            ],
+            "aboutAuthorListExist": true,
+
+            "comments": "Wide geographic area, such a big topic... Highly recommended! <br><br> İ.ö 1800'lerden şimdiye kadar olan dünya tarihini genel olarak (detaya inmeden) sıra ile özetliyor. İ.Ö 1800Den öncesine ilk insanlardan itibaren değinilmiş. Fakat 1.ö 1800 öncesi kısımlar, kitapta tarih belirtilerek indexlenmemiş. O kısımların tarihleri sadece paragrafların içerisinde yer alıyor. <br><br>Dünyanın hemen hemen birçok bölgesindeki olaylara değiniyor."
+        },
+        {
+            "name": "iki şehrin hikayesi (A Tale of Two Cities)",
+            "authorList": "Charles Dickens",
+            "aboutAuthorList": [
+                "life:1812 - 1870",
+                "original name:Charles John Huffam Dickens",
+                "İngiliz yazar ve toplum eleştirmeni. maddi durumlardan dolayı okuyamadı."
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "Thirteen Reasons Why",
+            "authorList": "Jay Asher",
+            "aboutAuthorList": [
+                "life:1975 - present",
+                "American writer and novelist."
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "Dinle Küçük Adam (eng: Listen, Little Man!)",
+            "authorList": "Wilhelm Reich",
+            "aboutAuthorList": [
+                "life:1897 - 1957",
+                "Austrian tıp doktoru ve psikiyatrist ve psikanalist."
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "Viran Dağlar",
+            "authorList": "Necati Cumalı",
+            "aboutAuthorList": [
+                "life:1921 (Yunanistan) - 2001 (İstanbul)",
+                "Türk yazar, şair",
+                "Hukuk fakültesi mezunu."
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "geleceğin fiziği (eng: Physics of the Future)",
+            "authorList": "Michio Kaku",
+            "aboutAuthorList": [
+                "Hardvard'da lisans yaptı. daha sonra farklı üniversiteden profesör ünvanına sahip.",
+                "Japon kökenli Amerikalı teorik fizikçi. Birçok TV programları da sunmuştur.",
+                "life:1947 - present"
+            ],
+            "aboutAuthorListExist": true,
+
+            "comments": "herkesin anlayacağı dilde yazılmış, insan psikolojisinden fiziksel değişimlere kadar 2100 e kadar yaşanacak gelişmeleri anlatmıştır."
+        },
+        {
+            "name": "Kapitalizmin Geleceği (eng: The Future of Capitalism)",
+            "authorList": "Lester Carl Thurow",
+            "aboutAuthorList": [
+                "American political economist.",
+                "bi süre MIT'de dekanlık yaptı.",
+                "life:1938 – 2016"
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "Şeker portakalı (eng: My Sweet Orange Tree)",
+            "authorList": "Jose Mauro De Vasconcelos",
+            "aboutAuthorList": [
+                "life: 1920 - 1984",
+                "Brazilian"
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "Aptalın Deneyimi, Aklını Başına Toplamak İçin Rehber (eng:The experience of a fool who had an epiphany about how to get rid of his glasses)",
+            "authorList": "Mirzakarim Norbekov",
+
+            "comments": "gözlüğü bırakmak için egzersiz anlatıyor. öncesinde insanlar üzerinde yapılan psikolojik testleri ve insanların neden egzersizleri yapmadığını anlatıyor."
+        },
+        {
+            "name": "Hamlet (other names: The Tragedy of Hamlet or Prince of Denmark)",
+            "authorList": "William Shakespeare",
+            "aboutAuthorList": [
+                "life: 1564 - 1616",
+                "İngiliz şair, oyun yazarı ve oyuncu."
+            ],
+            "aboutAuthorListExist": true,
+
+            "comments": "tiyatro oyunu. kitap direk kişilerin sözlerini içermektedir. başka metin yoktur.<br><br>orjinal yazıların farklı baskıları mevcut. her baskıda farklı sahneler dahi var."
+        },
+        {
+            "name": "The House on Mango Street",
+            "authorList": "Sandra Cisneros",
+            "aboutAuthorList": [
+                "İngilizce ve sanat dallarında yüksek lisansı var. öğretmenlik yaptı.",
+                "Mexican-American author."
+            ],
+            "aboutAuthorListExist": true,
+
+            "comments": "12'li yaşlardaki bir kızın sokak ve ev hayatını anlatan bir kitap. çok az şiirsel bir anlatım vardır. tüm kitapca geçen bir uzun süren bir konu yok. sadece günlük hayattaki sokak yaşamı var. 2-3 sayfalık parçalara (bölümlere) ayrılmış her hikaye. her bölüm birbirinden bağımsız.<br><br> Ana karakterin dilinden anlatılıyor hikayeler. ana karakter Latin bir kız ve Amerika'da yaşıyor."
+        },
+        {
+            "name": "The DNA Field and the Law of Resonance",
+            "authorList": "Pierre Franckh",
+            "aboutAuthorList": [
+                "life:1953 - ",
+                "German author, motivational speaker, businessman, actor and film director."
+            ],
+            "aboutAuthorListExist": true
+
+        },
+        {
+            "name": "Konuşmanın İmkansızlığı Üzerine Bir Diyalog",
+            "authorList": "Osman Çakmakçı",
+            "aboutAuthorListExist": false
+
+        },
+        {
+            "name": "100 Düşünce Gücü",
+            "authorList": "Jack Ensign ADDINGTON",
+            "aboutAuthorListExist": false
+
+        },
+        {
+            "name": "Konsantrasyonun Gücü",
+            "authorList": "Melik Duyar",
+            "aboutAuthorListExist": false
+
+        },
+        {
+            "name": "Dinginliğin Gücü",
+            "authorList": "Eckhart Tolle",
+            "aboutAuthorListExist": false
+
+        },
+        {
+            "name": "Sanatın Gücü",
+            "authorList": "Boris Groys",
+            "aboutAuthorListExist": false
+
+        },
+        {
+            "name": "Türkçenin Gücü - Türk Dilinin Zenginliklerine Tanıklar",
+            "authorList": "Doğan Aksan",
+            "aboutAuthorListExist": false
+
+        },
+        {
+            "name": "Yazma",
+            "authorList": "Can Yücel",
+            "aboutAuthorList": [
+                "life: 1926 - 1999.",
+                "şair(poet)"
+            ],
+            "aboutAuthorListExist": true,
+
+            "comments": "Şiir kitabı."
+        },
+        {
+            "name": "Sevgi Duvarı",
+            "authorList": "Can Yücel",
+
+            "comments": "Şiir kitabı."
+        },
+        {
+            "name": "yalnızlık paylaşılmaz",
+            "authorList": "Özdemir Asaf",
+            "aboutAuthorList": [
+                "life:1923 - 1981.",
+                "poet (şair)."
+            ],
+            "aboutAuthorListExist": true,
+
+            "comments": "şiir kitabı.<br><br>Bu kitaptan en beğendiğim 2 şiir parçası:",
+            "linkList": [
+                "https://yusuf-daglioglu.github.io/blog/site/yalnizlik_paylasilmaz.html"
+            ]
+        },
+        {
+            "name": "Dokuza kadar on",
+            "authorList": "Özdemir Asaf",
+
+            "comments": "şiir kitabı.<br><br>Karışık seçme şiirler tek kitapta toplanmış."
+        },
+        {
+            "name": "Lavinia",
+            "authorList": "Özdemir Asaf",
+
+            "comments": "şiir kitabı.<br><br>Karışık seçme aşk şiirleri tek kitapta toplanmış. <br><br> Lavinia kitapta da yer alan bir şiirin başlığı. özel kişi ismi. özdemir asaf ona 'gitme' diyor. ve o kişinin gerçek ismini herkesten saklıyor. lavinia'ya seslenirken ona bu isimde hitap ediyor."
+        },
+        {
+            "name": "Üvercinka",
+            "authorList": "Cemal Süreya",
+            "aboutAuthorList": [
+                "life: 1931 - 1990",
+                "orjinal adı: Cemalettin Seber",
+                "poet (şair)",
+                "Eserlerinde en sık işlediği temalar: aşk, kadın, yalnızlık, sosyal, ölüm, tanrı düşüncesi."
+            ],
+            "aboutAuthorListExist": true,
+
+            "comments": "şiir kitabı.<br><br>Eşiyle arası problemli olan yazar, tanışıp bir süre beraber olduğu kadın için 'Üvercinka' adını kullanmıştır. Kitabın ismi buradan gelir."
+        },
+        {
+            "name": "Beni Öp Sonra Doğur Beni",
+            "authorList": "Cemal Süreya",
+
+            "comments": "şiir kitabı."
+        },
+        {
+            "name": "Sıcak Nal",
+            "authorList": "Cemal Süreya",
+
+            "comments": "şiir kitabı."
+        },
+        {
+            "name": "Göçebe",
+            "authorList": "Cemal Süreya",
+
+            "comments": "şiir kitabı."
+        },
+        {
+            "name": "Güz Bitigi",
+            "authorList": "Cemal Süreya",
+
+            "comments": "şiir kitabı."
+        },
+        {
+            "name": "Sevda Sözleri",
+            "authorList": "Cemal Süreya",
+
+            "comments": "şiir kitabı.<br><br>Tüm kitaplarını komple içeriyor. Ayrıca bazı baskılarında dergilerde ve mektuplarda kalmış yirminin üstünde şiiri de içermektedir.<br><br>'Uçurumda Açan' isimli bir kitabın şiirleri de bu kitabın içerisinde var, fakat bu ayrı bir kitap olarak yayımlanmamış başka yerde (veya ben bulamadım)."
+        },
+        {
+            "name": "Ben sana mecburum",
+            "authorList": "Attila Hamdi İlhan",
+            "aboutAuthorList": [
+                "life:1925 - 2005",
+                "gazeteci, şair, senarist, romancı."
+            ],
+            "aboutAuthorListExist": true,
+
+            "comments": "Şiir kitabı."
+        },
+        {
+            "name": "Love and misadventure",
+            "authorList": "Lang Leav",
+
+            "comments": "şiir kitabı. İngilizce orjinal dilinde okudum."
+        },
+        {
+            "name": "Devotions",
+            "authorList": "Mary Oliver",
+
+            "comments": "şiir kitabı. Yazarın geçmiş birçok eserlerini birleştiren bir kitap. Ortalama 500 sayfa. İngilizce orjinal dilinde okudum."
+        }
+    ]
+}
