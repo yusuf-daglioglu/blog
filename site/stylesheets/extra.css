@@ -1,0 +1,34 @@
+.md-sidebar--secondary {
+   /* Table of content (TOC) width. 
+       If disable this, titles are getting multiline. */
+
+   /* Do not enable same CSS for "primary" because
+       it breaks the small screen view. */
+
+   width: 30%;
+}
+
+.md-nav__list {
+   /* Navigation bar 
+       Line space between each page title. */
+   line-height: 35px;
+}
+
+.md-nav__item {
+   /* Navigation bar 
+       adds border between each page title. */
+
+   /* "important" is required for small screen views. */
+
+   border-top: .13rem solid var(--md-default-fg-color--lightest) !important;
+}
+
+/* make all titles bold */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: bold !important;
+}
