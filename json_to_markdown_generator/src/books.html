@@ -1,0 +1,57 @@
+# 📚 Books
+
+List of some books I read.
+
+- The `first part` of this page contains `technical` books (about computer engineering)
+
+- and the `second part` contains the `non-technical` books.
+
+![books](./books_2.jpg)
+
+{{#bookList}}
+
+!!! success "{{name}}"
+
+    Authors: {{authorList}}
+
+    {{#aboutAuthorListExist}}
+    About the author:<br>
+    {{/aboutAuthorListExist}}
+
+    {{#aboutAuthorList}}
+    - {{.}}<br>
+    {{/aboutAuthorList}}
+
+{{#comments}}
+
+!!! note "My comments for the book"
+
+    {{comments}}
+{{/comments}}
+
+    {{#linkList}}
+    - <a target="_blank" rel="noopener noreferrer" href="{{.}}">{{.}}</a>
+
+    {{/linkList}}
+
+<br><br>
+
+{{/bookList}}
+
+![books](./books_1.jpg)
+
+<br><br>
+
+<b>Lisans:</b>
+
+Bu makale <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener">
+<b>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</b>
+</a> lisansı ile lisanslanmıştır.
+
+<b>License:</b>
+
+This article is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener">
+<b>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</b>
+</a> license.
+
+<br><br>

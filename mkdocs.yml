@@ -1,0 +1,65 @@
+site_name: Personal Blog • Yusuf Daglioglu
+site_url: ""
+use_directory_urls: false
+
+nav:
+  - 👤 About me & ✉️ Message me: about_me.md
+  - 📚 Books: books.md
+  - 🎨Art • Kültür&Sanat fuarları ve haberleri [Turkish]: art_online_news.md
+  - 🏛️ Aυτονομία Πανεπιστημίων [Greek]: university_autonomy.md
+  - 🎨Art • Sanat akımları [Turkish]: art_movements.md
+  - 🎨Art • Amateur Communities: amateur_communities.md
+  - 💻IT • Immutable Distro: immutable_distro.md
+  - 🎨Art • Expressionism Artworks: expressionism_artworks.md
+  - 🎨Art • Notable live and covers: notable_live_performance_and_covers.md
+  - 🎨Art • Short movies and my IMDB: short_movies_and_my_imdb.md
+  - ⏰ Saat kaç? [Turkish]: what_time_is_it.md
+  - 🎨Art • Do not go gentle into that goodnight: do_not_go_gentle.md
+  - 💻IT • Rolling Releases: rolling_releases.md
+  - 🗣️ Dillerin ilginç yapıları [Turkish]: dillerin_ilginc_yapilari.md
+  - 💻IT • HTTP Strict Transport Security [Turkish]: hsts.md
+  - 💻IT • Yazılım Lisansları [Turkish]: yazilim_lisanslari.md
+  - 🎨Art • Yalnızlık Paylaşılmaz [Turkish]: yalnizlik_paylasilmaz.md
+  - 💻IT • Block şifreleme [Turkish]: block_cypher.md
+
+extra:
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+theme:
+  name: material
+
+  custom_dir: overrides # this is only to add meta headers on HTML like "noindex" (to see all check overrides/main.html).
+
+  icon:
+    admonition:
+      custompencil: octicons/pencil-16
+
+  features:
+    - search.highlight
+
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
